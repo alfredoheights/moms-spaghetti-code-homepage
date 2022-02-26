@@ -1,38 +1,35 @@
+html, body {
+  margin:0;
+  /*height:100%;*/
+  width: 100%;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: calc(100vh - 128px);
+  height: -webkit-calc(100vh - 128px);
+  height: -moz-calc(100vh - 128px);
+  background-image: url("../public/checkerboard.png");
+  background-size: 64px;
+  /*border: 64px solid transparent;*/
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  border-image: url('../public/checkerborder.png') 178 round;
+  border-width: 64px;
+  border-style: solid;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  flex: 1;
+  background-color: white;
+  overflow: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  /*margin: 20px;*/
+}
+
+.mom {
+  width: 100%;
+  height: auto;
 }
